@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christian Del Valle Ogaz — Currículum Vitae</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1B2A47;
+    --navy-deep:#131F38;
+    --gold:#9C7A3C;
+    --paper:#FBFAF7;
+    --panel:#F2EFE8;
+    --ink:#20242B;
+    --ink-soft:#565F6C;
+    --rule:#D8D2C4;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:#DCDCD4;
+    color:var(--ink);
+    font-family:'Source Sans 3', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{
+    max-width:960px;
+    margin:36px auto;
+    background:var(--paper);
+    box-shadow:0 6px 28px rgba(19,31,56,.18);
+    display:grid;
+    grid-template-columns:290px 1fr;
+  }
+  h1,h2,h3{font-family:'Source Serif 4', serif; margin:0;}
+
+  /* ---------- SIDEBAR ---------- */
+  .sidebar{
+    background:var(--navy);
+    color:#E7E9EE;
+    padding:44px 30px 40px;
+  }
+  .sidebar .initials{
+    width:78px; height:78px; border:1.5px solid var(--gold);
+    border-radius:50%; display:flex; align-items:center; justify-content:center;
+    font-family:'Source Serif 4', serif; font-size:26px; color:var(--gold);
+    margin-bottom:22px;
+  }
+  .sidebar h1{font-size:23px; font-weight:600; color:#fff; line-height:1.25; margin-bottom:6px;}
+  .sidebar .role{font-size:12.5px; color:var(--gold); letter-spacing:.03em; margin-bottom:30px; line-height:1.5;}
+
+  .side-block{margin-bottom:30px;}
+  .side-block h2{
+    font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--gold); font-family:'Source Sans 3',sans-serif; font-weight:600;
+    padding-bottom:8px; margin-bottom:14px; border-bottom:1px solid rgba(255,255,255,.18);
+  }
+  .contact-item{display:flex; gap:9px; font-size:12.5px; color:#D6DAE2; margin-bottom:9px; line-height:1.4;}
+  .contact-item .ic{color:var(--gold); font-family:'Source Serif 4',serif; font-size:12px; width:14px; flex-shrink:0;}
+
+  .skill-item{font-size:12.5px; color:#D6DAE2; margin-bottom:8px; padding-left:12px; position:relative; line-height:1.4;}
+  .skill-item::before{content:'—'; position:absolute; left:0; color:var(--gold);}
+
+  .edu-item{margin-bottom:16px;}
+  .edu-item .deg{font-size:13px; color:#fff; font-weight:600; line-height:1.35; margin-bottom:3px;}
+  .edu-item .inst{font-size:12px; color:#B9C0CC; line-height:1.4;}
+  .edu-item .yr{font-size:11px; color:var(--gold); font-family:'Source Sans 3',sans-serif; margin-top:2px;}
+
+  .personal-list{display:flex; flex-wrap:wrap; gap:7px;}
+  .personal-list span{
+    font-size:11px; color:#D6DAE2; border:1px solid rgba(255,255,255,.25);
+    padding:4px 9px; border-radius:2px;
+  }
+
+  /* ---------- MAIN ---------- */
+  .main{padding:44px 46px 50px;}
+  .section{margin-bottom:32px;}
+  .section h2{
+    font-size:14px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--navy); font-family:'Source Sans 3',sans-serif; font-weight:700;
+    display:flex; align-items:center; gap:14px; margin-bottom:16px;
+  }
+  .section h2::after{content:''; flex:1; height:1px; background:var(--rule);}
+
+  .perfil{font-size:13.8px; line-height:1.75; color:var(--ink-soft); text-align:justify;}
+
+  .job{margin-bottom:22px; padding-left:18px; border-left:2px solid var(--rule); position:relative;}
+  .job::before{content:''; position:absolute; left:-5px; top:4px; width:8px; height:8px; border-radius:50%; background:var(--gold);}
+  .job:last-child{margin-bottom:0;}
+  .job-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:6px; margin-bottom:5px;}
+  .job-title{font-family:'Source Serif 4',serif; font-size:16.5px; font-weight:600; color:var(--navy);}
+  .job-org{font-size:13px; color:var(--ink-soft); font-style:italic;}
+  .job-date{font-family:'Source Sans 3',sans-serif; font-size:11.5px; color:var(--gold); font-weight:600; letter-spacing:.02em; white-space:nowrap;}
+  .job ul{margin:8px 0 0; padding-left:18px;}
+  .job li{font-size:13px; color:var(--ink-soft); line-height:1.6; margin-bottom:4px;}
+
+  .cert{font-size:13px; color:var(--ink-soft); line-height:1.7; padding-left:18px; position:relative; margin-bottom:6px;}
+  .cert::before{content:'—'; position:absolute; left:0; color:var(--gold);}
+  .cert b{color:var(--ink); font-weight:600;}
+
+  @media print{
+    body{background:#fff;}
+    .page{box-shadow:none; margin:0; max-width:100%;}
+  }
+  @media (max-width:720px){
+    .page{grid-template-columns:1fr;}
+    .main{padding:34px 26px 40px;}
+    .sidebar{padding:34px 26px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+    <div class="initials">CD</div>
+    <h1>Christian Del Valle Ogaz</h1>
+    <div class="role">CONTADOR PÚBLICO Y AUDITOR<br>MBA EN ADMINISTRACIÓN Y DIRECCIÓN DE EMPRESAS</div>
+
+    <div class="side-block">
+      <h2>Contacto</h2>
+      <div class="contact-item"><span class="ic">T</span><span>+56 9 9044 8825</span></div>
+      <div class="contact-item"><span class="ic">@</span><span>christiandelvalleogaz@gmail.com</span></div>
+      <div class="contact-item"><span class="ic">•</span><span>Santiago, Chile</span></div>
+    </div>
+
+    <div class="side-block">
+      <h2>Formación académica</h2>
+      <div class="edu-item">
+        <div class="deg">MBA en Administración y Finanzas de Empresas</div>
+        <div class="inst">Escuela de Negocios Europea de Barcelona</div>
+        <div class="yr">2016</div>
+      </div>
+      <div class="edu-item">
+        <div class="deg">Contador Público Auditor, mención Finanzas</div>
+        <div class="inst">Universidad de Santiago de Chile</div>
+        <div class="yr">2002</div>
+      </div>
+    </div>
+
+    <div class="side-block">
+      <h2>Competencias técnicas</h2>
+      <div class="skill-item">SAP FI / CO / MM / PC (Experto)</div>
+      <div class="skill-item">Python</div>
+      <div class="skill-item">Power BI</div>
+      <div class="skill-item">Control de gestión</div>
+      <div class="skill-item">Auditoría interna y control interno</div>
+      <div class="skill-item">Presupuestos y costos</div>
+      <div class="skill-item">Inventarios y activos fijos</div>
+      <div class="skill-item">Microsoft Office avanzado</div>
+    </div>
+
+    <div class="side-block">
+      <h2>Competencias personales</h2>
+      <div class="personal-list">
+        <span>Liderazgo de equipos</span>
+        <span>Orientación a resultados</span>
+        <span>Capacidad analítica</span>
+        <span>Comunicación efectiva</span>
+        <span>Adaptabilidad y mejora continua</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+  <main class="main">
+
+    <div class="section">
+      <h2>Perfil profesional</h2>
+      <p class="perfil">Especialista en implementación y optimización de procesos financieros y de control, auditorías internas, gestión presupuestaria y análisis financiero, con foco en la automatización de reportes mediante Python y Power BI. Amplia experiencia en implementación de ERP SAP (FI-CO-MM-PC), control de inventarios y activos fijos. Liderazgo de equipos multidisciplinarios y orientación a resultados.</p>
+    </div>
+
+    <div class="section">
+      <h2>Experiencia profesional</h2>
+
+      <div class="job">
+        <div class="job-head">
+          <div><span class="job-title">Profesional Independiente</span><br><span class="job-org">Consultoría</span></div>
+          <div class="job-date">MARZO 2023 — ACTUALIDAD</div>
+        </div>
+        <ul>
+          <li>Automatización de procesos con Python y Power BI; implementación de ERP SAP FI-CO.</li>
+          <li>Coordinación de inventarios físicos, activos fijos y revisión de estados financieros.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div><span class="job-title">Profesional de Contratos de Infraestructura</span><br><span class="job-org">SAG Red Laboratorios</span></div>
+          <div class="job-date">SEPT 2022 — FEB 2023</div>
+        </div>
+        <ul>
+          <li>Automatización de procesos de control de contratos, presupuesto e inventarios.</li>
+          <li>Preparación del PAC (Plan Anual de Compras) y bases técnicas.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div><span class="job-title">Consultor SAP FI Funcional</span><br><span class="job-org">Global SPA</span></div>
+          <div class="job-date">ABR 2022 — SEPT 2022</div>
+        </div>
+        <ul>
+          <li>Implementación de ERP SAP HANA, auditoría de estados financieros y soporte funcional a usuarios clave.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div><span class="job-title">Profesional Independiente</span><br><span class="job-org">Consultoría</span></div>
+          <div class="job-date">OCT 2020 — MAR 2022</div>
+        </div>
+        <ul>
+          <li>Implementación de ERP SAP FI-CO, inventarios físicos, activos fijos y auditoría de estados financieros.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div><span class="job-title">Controller Operativo</span><br><span class="job-org">Salfacorp</span></div>
+          <div class="job-date">NOV 2018 — SEPT 2020</div>
+        </div>
+        <ul>
+          <li>Control del presupuesto mensual, revisión del Estado de Resultados y reportes a directorio y comités de auditoría.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div><span class="job-title">Responsable de Auditoría Interna</span><br><span class="job-org">Revesol S.A. — Grupo Precisión</span></div>
+          <div class="job-date">DESDE MARZO 2014</div>
+        </div>
+        <ul>
+          <li>Plan anual de auditoría interna, controles internos y coordinación con auditores externos.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div><span class="job-title">Jefe de Control de Gestión</span><br><span class="job-org">Hilti Chile Ltda.</span></div>
+          <div class="job-date">ENE 2008 — ENE 2010</div>
+        </div>
+        <ul>
+          <li>Control presupuestario, indicadores de gestión (KPI) y capacitación de usuarios SAP FI-CO.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Capacitaciones</h2>
+      <div class="cert"><b>Academia SAP FI-CO</b> — Aplisap (2008)</div>
+      <div class="cert"><b>Diplomado en Análisis y Visualización de Datos</b> para la gestión de procesos</div>
+      <div class="cert"><b>Inducción General a la Administración del Estado</b> — Centro de Estudios de la Administración del Estado, Contraloría General de la República (2022, 30 hrs.)</div>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>
